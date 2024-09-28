@@ -30,6 +30,15 @@ def player(request):
       sessions = Session.objects.all()
       return render(request, 'Player.html', {'csports': csports , 'sessions': sessions})
 
+def sports(request):
+    return render(request,"sports.html")
+
+def about(request):
+    return render(request,"about.html")
+
+def contact(request):
+    return render(request,"contact.html")
+
 @login_required
 def admin1(request):
     return render(request, "admin1.html")

@@ -6,9 +6,13 @@ from .views import filtered_sessions, choice
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('index', views.home, name='home'),
     path('signup', views.signup, name='signup'),
     path('activate/<uidb64>/<token>', views.activate, name='activate'),
     path('signin', views.signin, name='signin'),
+    path('sports', views.sports, name='sports'),
+    path('about', views.about, name='about'),
+    path('contact', views.contact, name='contact'),
     path('signout', views.signout, name='signout'),
     path('admin1', views.admin1, name='admin1'),
     path('player', views.player, name='player'),
